@@ -16,4 +16,6 @@ canvas{
 }
 h1 {
     font-size: xxx-large;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
