@@ -13,13 +13,13 @@ let comida= {
 }
 
 function criarEspaço() {
-    context.fillStyle = "Blue";
+    context.fillStyle = "white";
     context.fillRect(0, 0, 16  * box, 16 * box);
 }
 
 function criarCobra() {
     for(i=0; i < snake.length; i++) {
-        context.fillStyle = "white";
+        context.fillStyle = "midnightblue";
         context.fillRect(snake[i].x, snake[i].y, box ,box);
     }
 }
@@ -66,11 +66,12 @@ function iniciarJogo() {
 
     if(snakeX != comida.x || snakeY != comida.y){
         snake.pop();
+
     }
     else{
     comida.x = Math.floor(Math.random() * 15 + 1) * box,
     comida.y = Math.floor(Math.random() * 15 + 1) * box
-}
+    }
 
 
     let cabecaC = {
